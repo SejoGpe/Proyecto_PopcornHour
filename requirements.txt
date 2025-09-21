@@ -1,0 +1,9 @@
+Flask==2.3.3
+Flask-Login==0.7.0
+Flask-Migrate==4.0.4
+Flask-WTF==1.1.1
+SQLAlchemy==2.0.19
+psycopg2-binary==2.9.7    # si usas PostgreSQL, opcional: sqlite no necesita esto
+python-dotenv==1.0.0
+Werkzeug==2.3.7
+gunicorn==21.2.0          # para despliegue opcional
