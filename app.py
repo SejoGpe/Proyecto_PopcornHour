@@ -10,13 +10,7 @@ load_dotenv()
 app = Flask(__name__)
 app.secret_key = os.getenv('SECRET_KEY')
 
-# Configuración de conexión a la base de datos desde variables de entorno (.env)
-# El archivo .env debe tener el siguiente formato:
-# SECRET_KEY=tu_clave_secreta
-# DB_NAME=nombre_de_tu_base_de_datos
-# DB_USER=usuario_de_tu_base_de_datos
-# DB_PASS=contraseña_de_tu_base_de_datos
-# DB_HOST=host_de_tu_base_de_datos (ejemplo: db.xxxxx.supabase.co)
+# Configuración de conexión a la base de datos en suprabase.
 DB_NAME = os.getenv("DB_NAME")
 DB_USER = os.getenv("DB_USER")
 DB_PASS = os.getenv("DB_PASS")
